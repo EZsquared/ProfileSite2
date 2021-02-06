@@ -1,0 +1,348 @@
+:root{
+    /*  ********************************************************************
+        Colors
+    ********************************************************************* */
+    --yellow: rgb(247, 228, 63);
+    --white: aliceblue;
+}
+@font-face {
+    font-family: 'icomoon';
+    src: url("../fonts/icomoon/icomoon.eot?srf3rx");
+    src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
+    font-weight: normal;
+    font-style: normal; 
+}
+body {
+    margin: 0;
+    color: var(--white);
+
+}
+.zone {
+    font-size:2em;
+    border-right:1px solid #bbb;
+}
+.zone:hover {
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+.page-container {
+    display: grid;
+    /* height: 100vh; */
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 0;
+    margin-left: 18%;
+    height: fit-content;
+}
+/* ALL THINGS TO DO WITH THE SIDE NAVIGATION BLOCK */
+        .sidenav {
+            padding-top: 1%;
+            margin: 0;
+            background-image: url("./img/Patterns/Color/silver\ pattern.jpg");
+            background-size: cover;
+            background-color: rgb(241, 237, 237);
+            position: fixed;
+            height: 100%;
+            width: 18%;
+            text-align: center;
+            font-variant: small-caps;
+            color: aliceblue;
+            transition: box-shadow 2s ease-out, text-shadow .9s linear, width .8s ease-out ;
+            box-shadow:rgba(255, 255, 255, 0.411) 0px 0px 45px;
+
+        }
+        .sidenav:hover {
+            transition: box-shadow .1s, text-shadow .4s linear, width .4s ease-out ;
+            width: 21%;
+            text-shadow: 1px 1px 1px #1d1c1c,
+            1px 2px 1px #919191,
+            1px 8px 6px rgba(16,16,16,0.4),
+            1px 9px 10px rgba(16,16,16,0.2);
+            box-shadow: rgb(16, 16, 16) 0px 5px 1px,
+                        rgb(16, 16, 16) 0px 5px 1px,
+                        rgba(255, 255, 255, 0.884) 0px 0px 25px,
+                        rgba(255, 255, 255, 0.685) 0px 1px 45px;
+        }
+        .img-zone {
+            padding: 2px;
+            cursor:pointer;
+            font-size:2em;
+            border:1px solid #bbb;
+            border-radius:50%;
+            transition: transform 0.3s linear;
+        }
+        .img-zone:hover {
+            z-index: 1000;
+            box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+            transform: scale(1.1);
+        }
+        .img-cont {
+            padding-top: 5%;
+        }
+        .img-cont:active{
+            left: 40%;
+            top: 20%;
+            transform: scale(2.0);
+            position: relative;
+        }
+        .authorimg > img {
+            cursor:zoom-in;
+            height: 3.25em;
+        }
+        .name-cont {
+            display: flex;
+            text-align: center;
+            font-size: 2rem;
+            padding-top: 5%;
+            justify-content: center;
+        }
+        .space-break {
+            padding-left: 5%;
+        }
+        .animate-letter {
+            cursor: crosshair;
+            transition: color .5s, transform 1.2s;
+            padding: .5%;
+        }
+        .animate-letter:hover {
+            color: #ffd000;
+            transform: scale(1.8);
+        }
+        .navtext {
+            padding: 0;
+            list-style: none;
+            margin: 0;
+        }
+        a {
+            color: aliceblue;
+            text-decoration: none;
+        }
+        .choices {
+            padding: 3%;
+            font-size: 60%;
+        }
+        .choices > a:hover {
+            transition: .3s;
+            color: rgb(255, 217, 0);
+            font-size: 105%;
+            text-shadow: 1px 1px 1px #919191,
+                1px 8px 6px rgba(255, 255, 255, 0.4),
+                1px 9px 10px rgba(255, 252, 99, .3),
+                10px 15px 10px rgb(15, 15, 14);
+
+        }
+        .choice-container {
+            padding-top: 7%;
+        }
+        .descript-container {
+            padding-top: 3%;
+        }
+
+        .title-descript {
+            padding: 2%;
+            color: #ffd000;
+            font-size: .7em;
+            cursor:default;
+        }
+        .title-descript:hover {
+            color: aliceblue;
+        }
+
+
+/* MAIN CONTENT STYLING  */
+.cover-content{
+    height: 95vh;
+}
+.main-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    padding-left: 3%;
+    background-color: #8a8679;
+    background-image: url("./img/Patterns/Dark/moulin_@2X.png");
+    background-size: auto;
+    /* border-top: solid 1px silver; */
+}
+section {
+    padding-bottom: 5%;
+    padding-left: 3%;
+    padding-right: 2%;
+}
+.section-title{
+    margin-top: 1%;
+    padding: 5%;
+    padding-left: 2%;
+    font-variant: small-caps;
+    text-align: left;
+    font-size: 2em;
+    text-shadow: 0px 1px 1px #000000,
+                2px 5px 15px rgba(255, 255, 255, 0.582),
+                2px 10px 32px rgb(216, 216, 216),
+                -2px 13px 42px rgb(209, 209, 209),
+                0px -10px 25px rgb(223, 223, 223);
+}
+.section-descript {
+    margin-top: 1%;
+    padding-bottom: 5%;
+    padding-left: 5%;
+    font-variant:small-caps;
+    font-style: italic;
+    text-align: left;
+    font-size: 1.8em;
+    text-shadow: 0px 1px 1px #000000,
+                2px 5px 15px rgba(255, 255, 255, 0.582),
+                2px 10px 32px rgb(216, 216, 216),
+                -2px 13px 42px rgb(209, 209, 209),
+                0px -10px 25px rgb(223, 223, 223);
+}
+/* .section-descript{
+    transition: 1.5s;
+    padding-top: 1.5%;
+    padding-bottom: 2%;
+    margin-top: -5%;
+    margin-bottom: 10%;
+    margin-right: 24%;
+    margin-left: 22%;
+    font-variant: small-caps;
+    text-align: center;
+    font-size: 2em;
+    background-image: url("./img/Patterns/Dark/rubber_grip.png");
+    box-shadow: 0px 1px 2px rgb(0, 0, 0),
+                0px 1px 7px rgb(0, 0, 0),
+                0px 2px 2px rgb(240, 240, 240),
+                0px 1px 15px rgba(240, 240, 240, 0.884),
+                0px 1px 60px rgba(219, 219, 219, 0.267);
+    text-shadow: 0px 1px 1px #000000,
+                1px 5px 8px rgba(255, 255, 255, 0.562),
+                1px 10px 40px rgba(219, 219, 219, 0.705);
+    border-radius: 1%;
+    border: solid 1px rgb(148, 148, 148);
+}
+.section-descript:hover {
+    transition: .5s;
+    background-color: rgba(156, 156, 156, 0.555);
+    text-shadow: 0px 1px 1px #000000,
+    0px 2px 8px rgba(255, 255, 255, 0.562);
+    box-shadow: 0px 1px 10px rgb(219, 219, 219);
+} */
+.about-content{
+    margin-left: 4%;
+    margin-right: 6%;
+    padding: 5%;
+    color: black;
+    font-size: 100%;
+    
+    background-image: url("./img/Patterns/Light/green_cup.png");
+    background-size: auto;
+    
+}
+.content-zone{
+    border: solid;
+    border-color: rgb(65, 64, 64);
+    border-width: 2px;
+    box-shadow: rgba(255, 255, 255, 0.4) 0px 0px 75px, 
+                inset rgba(0,0,0,1) 0px 0px 50px,
+                inset rgba(0,0,0,1) 0px 1px 2px,
+                inset rgba(0,0,0,1) 0px 1px 25px;
+    transition: box-shadow 1.5s ease-out, border-color 1.8s;
+}
+.content-zone:hover {
+    transition: box-shadow .5s ease-out, border-color .8s;
+    border-color: #7e7c7cc5;
+    box-shadow:rgb(255, 255, 255) 0px 0px 45px,
+    inset rgba(0, 0, 0, 0.719) 1px 1px 5px,
+    inset rgba(0, 0, 0, 0.719) -1px -1px 5px,
+    inset rgba(0, 0, 0, 0.61) 0px -5px 10px;
+}
+.content-zone-clicked {
+    transition: box-shadow .5s ease-out, border-color .8s;
+    border-color: #7e7c7cc5;
+    box-shadow:rgb(255, 255, 255) 0px 0px 45px,
+    inset rgba(0, 0, 0, 0.719) 1px 1px 5px,
+    inset rgba(0, 0, 0, 0.719) -1px -1px 5px,
+    inset rgba(0, 0, 0, 0.61) 0px -5px 10px;
+}
+.zoom-text {
+    transform: scale(.95);
+    transition: 1.5s;
+}
+.content-zone:hover > .zoom-text {
+    transition: .5s;
+    transform: scale(1.01);
+
+}
+.zoom-text-clicked {
+    transform: scale(1.01);
+
+}
+.wrapper {
+    display: grid;
+    margin: 2%;
+    margin-right: 3.5%;
+    margin-top: 10%;
+    column-gap: 5%;
+    row-gap: 15%;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-rows: repeat(); */
+}
+.profile-box {
+    cursor:default;
+    display: grid;
+    gap: 5%;
+    color: #000000;
+    background-image: url("./img/Patterns/Light/green_cup.png");
+    padding: 7%;
+    border-width: 1px 1px;
+    transition: box-shadow 1s ease-out, border-color 1.5s;
+    font-size: 1.2em;
+    /* box-shadow: rgba(255, 255, 255, 0.247) 0px 0px 20px, 
+                inset rgba(0,0,0,1) 0px 0px 50px,
+                inset rgba(0,0,0,1) 0px 0px 2px,
+                inset rgb(134, 134, 134) 0px 0px 35px; */
+}
+.profile-box-title {
+    font-size: 1.5em;
+    color: #fcca36;
+    font-variant: small-caps;
+    text-shadow: #000000 0px 1px 1px,
+    #000000 0px 1px 1px,
+    #000000 1px 2px 5px;
+}
+.leather-button {
+    background-image: url("./img/Patterns/Light/leather_1_@2X.png");
+    border: solid 1px #bbb;
+    box-shadow: rgb(0, 0, 0) 0px 0px 25px,
+                rgb(0, 0, 0) 0px 0px 2px,
+                rgb(0, 0, 0) 0px 0px 5px,
+                rgb(252, 252, 252) 0px -3px 2px,
+                inset rgba(0,0,0,1) 0px 1px 5px;
+    text-shadow: #00000075 1px 7px 6px;
+    cursor: grab;
+}
+.leather-button-clicked {
+    transition: .2s;
+    background-image: url("./img/Patterns/Light/leather_1_@2X.png");
+    border: solid 1px rgb(51, 51, 51);
+    box-shadow: rgb(0, 0, 0) 0px 0px 2px,
+                /* rgb(0, 0, 0) 0px 0px 5px, */
+                rgb(252, 252, 252) 0px 3px 2px,
+                rgb(252, 252, 252) 0px 3px 20px,
+                inset rgba(0,0,0,1) 0px -1px 10px;
+    text-shadow: #00000075 1px 3px 3px;
+    cursor:grabbing;
+}
+.icon {
+    border-radius: 50%;
+    color: rgb(15, 15, 15);
+    font-size: 3em;
+    padding: 10%;
+    margin-top: -25%;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+/***********************************************************************
+ *  mini layout
+ **********************************************************************/
+
+/***********************************************************************
+ *  mobile layout
+ **********************************************************************/
