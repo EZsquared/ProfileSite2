@@ -224,18 +224,21 @@ section {
     0px 2px 8px rgba(255, 255, 255, 0.562);
     box-shadow: 0px 1px 10px rgb(219, 219, 219);
 } */
+
 .about-content{
     margin-left: 4%;
     margin-right: 6%;
     padding: 5%;
     color: black;
-    font-size: 100%;
-    
-    background-image: url("./img/Patterns/Light/green_cup.png");
-    background-size: auto;
-    
+    font-size: 1.2em;
+}
+.about-content-text{
+    padding-top: 3%;
 }
 .content-zone{
+    background-image: url("./img/Patterns/Light/green_cup.png");
+    background-size: auto;
+    text-align: center;
     border: solid;
     border-color: rgb(65, 64, 64);
     border-width: 2px;
@@ -262,6 +265,7 @@ section {
     inset rgba(0, 0, 0, 0.61) 0px -5px 10px;
 }
 .zoom-text {
+    
     transform: scale(.95);
     transition: 1.5s;
 }
@@ -287,10 +291,11 @@ section {
 .profile-box {
     cursor:default;
     display: grid;
+    text-align: center;
     gap: 5%;
     color: #000000;
     background-image: url("./img/Patterns/Light/green_cup.png");
-    padding: 7%;
+    padding: 10%;
     border-width: 1px 1px;
     transition: box-shadow 1s ease-out, border-color 1.5s;
     font-size: 1.2em;
@@ -308,6 +313,10 @@ section {
     #000000 1px 2px 5px;
 }
 .leather-button {
+    position: relative;
+    width: fit-content;
+    margin-top: -5rem;
+    border-radius: 50%;
     background-image: url("./img/Patterns/Light/leather_1_@2X.png");
     border: solid 1px #bbb;
     box-shadow: rgb(0, 0, 0) 0px 0px 25px,
@@ -331,13 +340,12 @@ section {
     cursor:grabbing;
 }
 .icon {
-    border-radius: 50%;
     color: rgb(15, 15, 15);
-    font-size: 3em;
-    padding: 10%;
-    margin-top: -25%;
-    margin-left: 25%;
-    margin-right: 25%;
+    font-size: 60px;
+    padding: 20px;
+    text-align: center;
+    margin-left: 27%;
+
 }
 /***********************************************************************
  *  mini layout

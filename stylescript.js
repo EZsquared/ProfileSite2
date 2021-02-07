@@ -1,15 +1,15 @@
 
 // Profile Boxes Sticky
 
-var profileBoxes = document.getElementsByClassName("profile-box");
+var profileBoxes = document.getElementsByClassName("leather-button");
 
 function setClicked() {
     // console.log(this.id)
-    let childBox1 = this.firstElementChild;
-    let butBox1 = childBox1.firstElementChild;
-    this.classList.toggle("content-zone-clicked")
-    childBox1.classList.toggle("zoom-text-clicked")
-    butBox1.classList.toggle("leather-button-clicked")
+    let zoom = this.parentElement;
+    let contentzone = zoom.parentElement;
+    contentzone.classList.toggle("content-zone-clicked")
+    zoom.classList.toggle("zoom-text-clicked")
+    this.classList.toggle("leather-button-clicked")
     // console.log("Stuck!")
 }
 
