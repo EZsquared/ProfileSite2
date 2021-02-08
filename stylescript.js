@@ -13,8 +13,6 @@ function setClicked() {
     // console.log("Stuck!")
 }
 
-for (var i = 0; i < profileBoxes.length; i++) {
-    profileBoxes[i].addEventListener("click", setClicked);
+for (item of profileBoxes) {
+    item.addEventListener("click", setClicked);
 }
-
-
